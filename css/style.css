@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 
   /* cormorant-500italic - latin_cyrillic */
   @font-face {
@@ -82,7 +89,8 @@ body {
   height: 6px;
   border-radius: 50%;
   background-color: #d7d9df;
-  box-shadow: 20px 0 0 0 #d7d9df, -20px 0 0 0 #d7d9df;
+  -webkit-box-shadow: 20px 0 0 0 #d7d9df, -20px 0 0 0 #d7d9df;
+          box-shadow: 20px 0 0 0 #d7d9df, -20px 0 0 0 #d7d9df;
 }
 .dotted::after {
   content: "";
@@ -95,28 +103,40 @@ body {
   height: 6px;
   border-radius: 50%;
   background-color: #d7d9df;
-  box-shadow: 20px 0 0 0 #d7d9df, -20px 0 0 0 #d7d9df;
+  -webkit-box-shadow: 20px 0 0 0 #d7d9df, -20px 0 0 0 #d7d9df;
+          box-shadow: 20px 0 0 0 #d7d9df, -20px 0 0 0 #d7d9df;
 }
 
 /* HEADER */
 .main-header {
   padding-top: 20px;
   padding-bottom: 20px;
-  box-shadow: 0px 4px 20px rgba(35, 35, 36, 0.15);
+  -webkit-box-shadow: 0px 4px 20px rgba(35, 35, 36, 0.15);
+          box-shadow: 0px 4px 20px rgba(35, 35, 36, 0.15);
 }
 .main-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .site-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-right: -39px;
   margin-left: 315px;
 }
@@ -158,7 +178,9 @@ body {
   left: -26px;
   background-image: url("../img/phone.svg");
   background-repeat: no-repeat;
-  transform: rotate(-11deg);
+  -webkit-transform: rotate(-11deg);
+      -ms-transform: rotate(-11deg);
+          transform: rotate(-11deg);
 }
 .main-nav__tel:hover,
 .main-nav__tel:focus {
@@ -170,9 +192,15 @@ body {
 
 /* BREADCRUMBS */
 .breadcrumbs {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-top: 60px;
   padding-bottom: 18px;
 }
@@ -226,12 +254,16 @@ body {
   color: #000000;
 }
 .meta {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 500px;
   margin: 0 auto;
   padding: 0;
   list-style: none;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-left: 130px;
   padding-top: 30px;
   padding-bottom: 45px;
@@ -337,10 +369,19 @@ aside h3 {
   text-align: center;
 }
 .social__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -351,6 +392,8 @@ aside h3 {
 }
 .social__link {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .social__link::before {
@@ -379,13 +422,16 @@ aside h3 {
 
 /* Img with note */
 .image-and-note {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding-top: 30px;
 }
 .image-and-note__text-wrapper {
   width: 327px;
   margin: auto 0 auto 29px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .image-and-note p {
   margin: 0;
@@ -404,12 +450,18 @@ aside h3 {
   text-align: center;
 }
 .rating-tools {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-top: 15px;
 }
 .rating-tools__item {
@@ -443,7 +495,8 @@ aside h3 {
   width: 260px;
   background-color: #f1f1f2;
   border-radius: 0 47px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 25px 53px;
   margin: 0 0 10px 10px;
 }
@@ -499,7 +552,9 @@ aside h3 {
   left: 24px;
 }
 .arrow-right {
-  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 .restaurants__btn--next {
   left: 206px;
@@ -526,6 +581,8 @@ aside h3 {
   color: #000000;
 }
 .tours__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   list-style: none;
   margin-right: -19px;
@@ -612,7 +669,9 @@ aside h3 {
   font-size: 36px;
   line-height: 61px;
   color: #F1F1F2;
-  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
   left: -100px;
   top: 106px;
 }
@@ -682,9 +741,15 @@ aside h3 {
   text-align: center;
 }
 .read__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: baseline;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -708,14 +773,21 @@ aside h3 {
 
 /* Main-footer */
 .main-footer {
-  box-shadow: 0px 4px 20px rgba(35, 35, 36, 0.15);
+  -webkit-box-shadow: 0px 4px 20px rgba(35, 35, 36, 0.15);
+          box-shadow: 0px 4px 20px rgba(35, 35, 36, 0.15);
   padding-top: 30px;
   padding-bottom: 25px;
 }
 .main-footer__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0;
   padding: 0 30px 0 30px;
   list-style: none;
@@ -737,7 +809,6 @@ aside h3 {
 .main-footer__item--active {
   opacity: 0.5;
 }
-
 
 
 
