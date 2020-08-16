@@ -131,12 +131,22 @@ body {
   text-decoration: none;
   color: #000000;
 }
+.site-menu__item a:hover,
+.site-menu__item a:focus {
+  border-bottom: solid 1px #000000;
+}
+.site-menu__item a:active,
+.site-menu__item--active {
+  opacity: 0.5;
+}
+
 .main-nav__tel {
   position: relative;
   font-weight: 500;
   font-size: 16px;
   line-height: 32px;
   color: #000000;
+  text-decoration: none;
   margin-left: auto;
 }
 .main-nav__tel::before {
@@ -146,9 +156,16 @@ body {
   height: 15.17px;
   top: 5px;
   left: -26px;
-  background-image: url(../img/phone.svg);
+  background-image: url("../img/phone.svg");
   background-repeat: no-repeat;
   transform: rotate(-11deg);
+}
+.main-nav__tel:hover,
+.main-nav__tel:focus {
+  color: #78acbd;
+}
+.main-nav__tel:active {
+  opacity: 0.8;
 }
 
 /* BREADCRUMBS */
@@ -172,6 +189,14 @@ body {
   content: " / ";
   margin-right: 3px;
 }
+.breadcrumbs__item[href]:hover,
+.breadcrumbs__item[href]:focus {
+  opacity: 0.5;
+}
+.breadcrumbs__item[href]:active {
+  opacity: 0.5;
+}
+
 
 /* INTRO */
 .intro {
@@ -335,6 +360,7 @@ aside h3 {
   height: 25px;
   left: -16px;
   background-repeat: no-repeat;
+  opacity: 0.5;
 }
 .social__link--vk::before {
   background-image: url("../img/vk.svg");
@@ -344,6 +370,11 @@ aside h3 {
 }
 .social__link--insta::before {
   background-image: url("../img/inst.svg");
+}
+.social__link:focus::before,
+.social__link:hover::before,
+.social__link:active::before {
+  opacity: 1;
 }
 
 /* Img with note */
@@ -390,12 +421,19 @@ aside h3 {
   background-repeat: no-repeat;
   border: none;
   background-color: transparent;
+  opacity: 0.5;
+  cursor: pointer;
 }
 .rating-tools__button--like {
   background-image: url("../img/like.svg");
 }
 .rating-tools__button--dislike {
   background-image: url("../img/dislike.svg");
+}
+.rating-tools__button:hover,
+.rating-tools__button:focus,
+.rating-tools__button:active {
+  opacity: 1;
 }
 
 /* Aside RESTAURANTS */
@@ -499,6 +537,11 @@ aside h3 {
 .tours__item a {
   text-decoration: none;
 }
+.tours__item a:hover h3,
+.tours__item a:focus h3,
+.tours__item a:active {
+  opacity: 0.5;
+}
 .tours__item h3 {
   text-align: left;
 }
@@ -537,6 +580,11 @@ aside h3 {
   background-repeat: no-repeat;
   top: 11px;
   left: 214px;
+}
+.tours__more:hover,
+.tours__more:focus,
+.tours__more:active {
+  opacity: 0.5;
 }
 
 /* Quote decoration */
@@ -618,6 +666,11 @@ aside h3 {
   line-height: 30px;
   color: #0094FF;
 }
+.links__item a:hover,
+.links__item a:focus,
+.links__item a:active {
+  opacity: 0.5;
+}
 
 /* Aside vertical READ */
 .read h2 {
@@ -647,6 +700,11 @@ aside h3 {
 .read__item h3 {
   text-align: left;
 }
+.read__item a:hover h3,
+.read__item a:focus h3,
+.read__item a:active {
+  opacity: 0.5;
+}
 
 /* Main-footer */
 .main-footer {
@@ -670,6 +728,14 @@ aside h3 {
   text-decoration: none;
   text-transform: uppercase;
   color: #000000;
+}
+.main-footer__item a:hover,
+.main-footer__item a:focus {
+  border-bottom: solid 1px #000000;
+}
+.main-footer__item a:active,
+.main-footer__item--active {
+  opacity: 0.5;
 }
 
 
